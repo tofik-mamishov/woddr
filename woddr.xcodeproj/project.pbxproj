@@ -1,0 +1,1234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		623C0E80220778F40016D475 /* DetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C0E7F220778F40016D475 /* DetailsAssembly.swift */; };
+		6240BB9F22061F81001EB975 /* CritRuleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6240BB9E22061F81001EB975 /* CritRuleViewProtocol.swift */; };
+		6240BBA122061FB4001EB975 /* CritRulePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6240BBA022061FB4001EB975 /* CritRulePresenterProtocol.swift */; };
+		6240BBA322062026001EB975 /* CritRuleInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6240BBA222062026001EB975 /* CritRuleInteractorProtocol.swift */; };
+		6240BBA5220620B7001EB975 /* CritRuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6240BBA4220620B7001EB975 /* CritRuleInteractor.swift */; };
+		6240BBA722062169001EB975 /* CritRulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6240BBA622062169001EB975 /* CritRulePresenter.swift */; };
+		624A529922C8C773007B605D /* CheckMarkControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624A529822C8C773007B605D /* CheckMarkControl.swift */; };
+		625279AA21F6269800B225D3 /* RoteActionsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625279A921F6269800B225D3 /* RoteActionsHandler.swift */; };
+		6257C7FE220EEDF200E241DF /* DicePoolAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6257C7FD220EEDF200E241DF /* DicePoolAssembly.swift */; };
+		6257C800220EF25B00E241DF /* InitiativeRollAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6257C7FF220EF25B00E241DF /* InitiativeRollAssembly.swift */; };
+		6257C802220EF49800E241DF /* ChanceRollAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6257C801220EF49800E241DF /* ChanceRollAssembly.swift */; };
+		6257C804220F071500E241DF /* PickerViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6257C803220F071500E241DF /* PickerViewManager.swift */; };
+		625839B82233CB6C004D5AA6 /* Pods_woddr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625839B72233CB6C004D5AA6 /* Pods_woddr.framework */; };
+		625839C32233CC18004D5AA6 /* DeckTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625839C22233CC18004D5AA6 /* DeckTransition.framework */; };
+		625839C52233FDBA004D5AA6 /* DeckTransition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 625839C22233CC18004D5AA6 /* DeckTransition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		625839C822340118004D5AA6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625839C722340118004D5AA6 /* UIView.swift */; };
+		625839CA223407F7004D5AA6 /* DPMiniSettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625839C9223407F7004D5AA6 /* DPMiniSettingsAssembly.swift */; };
+		625839CC22341049004D5AA6 /* SimplePickerViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625839CB22341049004D5AA6 /* SimplePickerViewManager.swift */; };
+		625839CE2234137D004D5AA6 /* DPSettingsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625839CD2234137D004D5AA6 /* DPSettingsRouterProtocol.swift */; };
+		625839D0223413C0004D5AA6 /* DPSettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625839CF223413C0004D5AA6 /* DPSettingsRouter.swift */; };
+		625839D22234188F004D5AA6 /* DPMiniSettingsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625839D12234188F004D5AA6 /* DPMiniSettingsRouterProtocol.swift */; };
+		625839D4223418F2004D5AA6 /* DPMiniSettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625839D3223418F2004D5AA6 /* DPMiniSettingsRouter.swift */; };
+		625A652D21E7E1D800D34A32 /* DicePoolPresetsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625A652C21E7E1D800D34A32 /* DicePoolPresetsAssembly.swift */; };
+		625B46B32213566B00D963D8 /* CancelSuccessHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B46B22213566B00D963D8 /* CancelSuccessHandler.swift */; };
+		625C13F221F64AB1005BC4A7 /* RollResultProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C13F121F64AB1005BC4A7 /* RollResultProvider.swift */; };
+		625CFA842231AEBD00A94280 /* DPMiniSettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625CFA832231AEBD00A94280 /* DPMiniSettingsViewProtocol.swift */; };
+		625CFA862231B0DE00A94280 /* DPMiniSettingsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625CFA852231B0DE00A94280 /* DPMiniSettingsPresenterProtocol.swift */; };
+		625CFA882231B13100A94280 /* DPMiniSettingsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625CFA872231B13100A94280 /* DPMiniSettingsInteractorProtocol.swift */; };
+		625CFA8A2231B53300A94280 /* DPMiniSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625CFA892231B53300A94280 /* DPMiniSettingsPresenter.swift */; };
+		625CFA8C2231B57F00A94280 /* DPMiniSettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625CFA8B2231B57F00A94280 /* DPMiniSettingsInteractor.swift */; };
+		625E6F71220DFA27009CD84A /* CritRuleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E6F70220DFA27009CD84A /* CritRuleType.swift */; };
+		6261D54F22397D0400A3C559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6261D54E22397D0400A3C559 /* Assets.xcassets */; };
+		62649D2F21E1507A001F75C6 /* SettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62649D2E21E1507A001F75C6 /* SettingsAssembly.swift */; };
+		626595202232B926001A0801 /* DPSettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265951F2232B926001A0801 /* DPSettingsViewProtocol.swift */; };
+		626595222232BA7F001A0801 /* DPSettingsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626595212232BA7F001A0801 /* DPSettingsPresenterProtocol.swift */; };
+		626595242232BB06001A0801 /* DPSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626595232232BB06001A0801 /* DPSettingsPresenter.swift */; };
+		626595262232FF87001A0801 /* DPSettingsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626595252232FF87001A0801 /* DPSettingsInteractorProtocol.swift */; };
+		62659528223300C6001A0801 /* DPSettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62659527223300C6001A0801 /* DPSettingsInteractor.swift */; };
+		6265952A22330160001A0801 /* DPSettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265952922330160001A0801 /* DPSettingsAssembly.swift */; };
+		6265952C22330846001A0801 /* DeckPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265952B22330846001A0801 /* DeckPickerView.swift */; };
+		6267E60D223E699000B450E7 /* WillpowerBoostViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267E60C223E699000B450E7 /* WillpowerBoostViewProtocol.swift */; };
+		6267E60F223E69AB00B450E7 /* WillpowerBoostPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267E60E223E69AB00B450E7 /* WillpowerBoostPresenterProtocol.swift */; };
+		6267E611223E6A0500B450E7 /* WillpowerBoostInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267E610223E6A0500B450E7 /* WillpowerBoostInteractorProtocol.swift */; };
+		6267E613223E6A3E00B450E7 /* WillpowerBoostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267E612223E6A3E00B450E7 /* WillpowerBoostViewController.swift */; };
+		6267E615223E6BBC00B450E7 /* WillpowerBoostTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267E614223E6BBC00B450E7 /* WillpowerBoostTableManager.swift */; };
+		6267E617223E6E4000B450E7 /* WillpowerBoostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267E616223E6E4000B450E7 /* WillpowerBoostCell.swift */; };
+		627461DB222C439200981312 /* DPMiniSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627461DA222C439200981312 /* DPMiniSettingsViewController.swift */; };
+		627461DD222C480300981312 /* DPSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627461DC222C480300981312 /* DPSettingsViewController.swift */; };
+		6276FF9B22149B5F00F71126 /* RollResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6276FF9A22149B5F00F71126 /* RollResultType.swift */; };
+		627B08F32204C057007B99C3 /* RollHandlersChainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B08F22204C057007B99C3 /* RollHandlersChainBuilder.swift */; };
+		627B08F52204CC3F007B99C3 /* DoubleSuccessHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B08F42204CC3F007B99C3 /* DoubleSuccessHandler.swift */; };
+		62815BBE223C2BF8007E2BCF /* WillpowerBoostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62815BBD223C2BF8007E2BCF /* WillpowerBoostType.swift */; };
+		628553652196080A000FB955 /* DicePoolViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628553642196080A000FB955 /* DicePoolViewProtocol.swift */; };
+		62855367219610B7000FB955 /* DicePoolPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62855366219610B7000FB955 /* DicePoolPresenterProtocol.swift */; };
+		628553692196118A000FB955 /* DicePoolPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628553682196118A000FB955 /* DicePoolPresenter.swift */; };
+		62862E7E21EBA994003AF70D /* CheckMarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62862E7D21EBA994003AF70D /* CheckMarkCell.swift */; };
+		6289EBBB220737B0007EB173 /* CritRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6289EBBA220737B0007EB173 /* CritRuleViewController.swift */; };
+		6289EBBD22073915007EB173 /* CritRuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6289EBBC22073915007EB173 /* CritRuleAssembly.swift */; };
+		6289EBBF22073C50007EB173 /* RerollHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6289EBBE22073C50007EB173 /* RerollHandler.swift */; };
+		6289EBC122074103007EB173 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6289EBC022074103007EB173 /* DetailsInteractor.swift */; };
+		628A998221E9F37600FA782E /* DicePoolPresetsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A998121E9F37600FA782E /* DicePoolPresetsViewProtocol.swift */; };
+		628A998421E9F3D900FA782E /* DicePoolPresetsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A998321E9F3D900FA782E /* DicePoolPresetsPresenterProtocol.swift */; };
+		628A998621E9F42700FA782E /* DicePoolPresetsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A998521E9F42700FA782E /* DicePoolPresetsPresenter.swift */; };
+		628A998821E9FB1700FA782E /* DicePoolPresetsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A998721E9FB1700FA782E /* DicePoolPresetsInteractorProtocol.swift */; };
+		628A998A21E9FB5600FA782E /* DicePoolPresetsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A998921E9FB5600FA782E /* DicePoolPresetsInteractor.swift */; };
+		628BB58222061A5400D3CDC1 /* CritRuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628BB58122061A5400D3CDC1 /* CritRuleCell.swift */; };
+		628CB67E22194F4100C7EE94 /* PickerViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628CB67D22194F4100C7EE94 /* PickerViewType.swift */; };
+		629096D021DF716A005C9817 /* SettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629096CF21DF716A005C9817 /* SettingsViewProtocol.swift */; };
+		629096D221DF71A4005C9817 /* SettingsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629096D121DF71A4005C9817 /* SettingsPresenterProtocol.swift */; };
+		629096D421DF768B005C9817 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629096D321DF768B005C9817 /* SettingsPresenter.swift */; };
+		629096D621DF7BC3005C9817 /* MailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629096D521DF7BC3005C9817 /* MailManager.swift */; };
+		629096DB21DF8665005C9817 /* DicePoolPresetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629096DA21DF8665005C9817 /* DicePoolPresetsViewController.swift */; };
+		6291841021DCE7B50059CAE5 /* MailComposeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6291840F21DCE7B50059CAE5 /* MailComposeViewControllerDelegate.swift */; };
+		6291A960223EA4C400AC7EEA /* WillpowerBoostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6291A95F223EA4C400AC7EEA /* WillpowerBoostInteractor.swift */; };
+		6291A962223EA60000AC7EEA /* WillpowerBoostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6291A961223EA60000AC7EEA /* WillpowerBoostPresenter.swift */; };
+		6291A964223EA89E00AC7EEA /* WillpowerBoostAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6291A963223EA89E00AC7EEA /* WillpowerBoostAssembly.swift */; };
+		6294A8D8224648AC006DFF7A /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294A8D7224648AC006DFF7A /* StepperView.swift */; };
+		62950487223CD8A3000C666B /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62950486223CD8A3000C666B /* UserDefaultsService.swift */; };
+		6298C09222CFCC8400CF052E /* AgainPointSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298C09122CFCC8400CF052E /* AgainPointSelector.swift */; };
+		6298E1EC21A5C97400B960E8 /* DicePoolRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298E1EB21A5C97400B960E8 /* DicePoolRouterProtocol.swift */; };
+		6298E1EE21A5C9FF00B960E8 /* DicePoolRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298E1ED21A5C9FF00B960E8 /* DicePoolRouter.swift */; };
+		629C911A21F343DE00282B3C /* DicePoolPresetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C911921F343DE00282B3C /* DicePoolPresetsService.swift */; };
+		62A1735821F4988900CCF91B /* RollHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1735721F4988900CCF91B /* RollHandlerProtocol.swift */; };
+		62A1735C21F49B9400CCF91B /* SuccessRollHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1735B21F49B9400CCF91B /* SuccessRollHandler.swift */; };
+		62A1735E21F49D9100CCF91B /* InfiniteRerollHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1735D21F49D9100CCF91B /* InfiniteRerollHandler.swift */; };
+		62AD5DF121AAA0A800274F80 /* InitiativeRollerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AD5DF021AAA0A800274F80 /* InitiativeRollerProtocol.swift */; };
+		62AD5DF321AAA16000274F80 /* InitiativeRoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AD5DF221AAA16000274F80 /* InitiativeRoller.swift */; };
+		62AE35CB219F2E850096F415 /* ChanceRollViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE35CA219F2E850096F415 /* ChanceRollViewProtocol.swift */; };
+		62AE35CD219F304C0096F415 /* ChanceRollPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE35CC219F304C0096F415 /* ChanceRollPresenterProtocol.swift */; };
+		62AE35CF219F31490096F415 /* ChanceRollInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE35CE219F31490096F415 /* ChanceRollInteractorProtocol.swift */; };
+		62AE35D1219F32160096F415 /* ChanceRollInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE35D0219F32160096F415 /* ChanceRollInteractor.swift */; };
+		62AE35D3219F35540096F415 /* ChanceRollPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE35D2219F35540096F415 /* ChanceRollPresenter.swift */; };
+		62B806C421A1BAEA0050DA60 /* InitiativeRollViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B806C321A1BAEA0050DA60 /* InitiativeRollViewProtocol.swift */; };
+		62B806C621A1BB870050DA60 /* InitiativeRollPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B806C521A1BB870050DA60 /* InitiativeRollPresenterProtocol.swift */; };
+		62B806C821A1BC3D0050DA60 /* InitiativeRollInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B806C721A1BC3D0050DA60 /* InitiativeRollInteractorProtocol.swift */; };
+		62B806CA21A1BD750050DA60 /* InitiativeRollInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B806C921A1BD750050DA60 /* InitiativeRollInteractor.swift */; };
+		62B806CC21A1C1420050DA60 /* InitiativeRollPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B806CB21A1C1420050DA60 /* InitiativeRollPresenter.swift */; };
+		62B806D021A1DA560050DA60 /* DetailsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B806CF21A1DA560050DA60 /* DetailsViewProtocol.swift */; };
+		62B806D221A1DBB40050DA60 /* DetailsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B806D121A1DBB40050DA60 /* DetailsPresenterProtocol.swift */; };
+		62B806D421A1DC550050DA60 /* DetailsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B806D321A1DC550050DA60 /* DetailsInteractorProtocol.swift */; };
+		62B806D621A1EDC90050DA60 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B806D521A1EDC90050DA60 /* DetailsPresenter.swift */; };
+		62BCA20D2199E79C008DE82E /* DicePoolInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BCA20C2199E79C008DE82E /* DicePoolInteractorProtocol.swift */; };
+		62BCA20F2199EC02008DE82E /* DicePoolInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BCA20E2199EC02008DE82E /* DicePoolInteractor.swift */; };
+		62DC3ADD214C1D0600C88DEF /* StoreReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DC3ADC214C1D0600C88DEF /* StoreReviewHelper.swift */; };
+		62F6293F21B06AA600979279 /* ChanceRollerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6293E21B06AA600979279 /* ChanceRollerProtocol.swift */; };
+		62F6294121B06BC200979279 /* ChanceRoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6294021B06BC200979279 /* ChanceRoller.swift */; };
+		62FA37FD2210663C0014F7F1 /* SetupObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FA37FC2210663C0014F7F1 /* SetupObject.swift */; };
+		CC131F862067977600F7FD2C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC131F852067977600F7FD2C /* SettingsViewController.swift */; };
+		CC447B84201F5D93001CA112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC447B83201F5D93001CA112 /* AppDelegate.swift */; };
+		CC447B86201F5D93001CA112 /* DicePoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC447B85201F5D93001CA112 /* DicePoolViewController.swift */; };
+		CC447B89201F5D93001CA112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC447B87201F5D93001CA112 /* Main.storyboard */; };
+		CC447B8E201F5D93001CA112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC447B8C201F5D93001CA112 /* LaunchScreen.storyboard */; };
+		CC447B96201F60CF001CA112 /* DiceRandomizerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC447B95201F60CF001CA112 /* DiceRandomizerProtocol.swift */; };
+		CC8E498020570120005241A0 /* ChanceRollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E497F20570120005241A0 /* ChanceRollViewController.swift */; };
+		CCA14BAB205D531B00A7241A /* InitiativeRollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA14BAA205D531B00A7241A /* InitiativeRollViewController.swift */; };
+		CCB2253C2020A39900041C30 /* DicePoolRoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2253B2020A39900041C30 /* DicePoolRoller.swift */; };
+		CCB2253E2020A61D00041C30 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2253D2020A61D00041C30 /* Dice.swift */; };
+		CCB59FFE203C657900D461A1 /* DiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB59FFD203C657900D461A1 /* DiceProtocol.swift */; };
+		CCB5A000203C664500D461A1 /* RollResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB59FFF203C664500D461A1 /* RollResult.swift */; };
+		CCC419592046D984007F511A /* PickerViewNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC419582046D984007F511A /* PickerViewNumber.swift */; };
+		CCCC64422021F38100781BBE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC64412021F38100781BBE /* DetailsViewController.swift */; };
+		CCD596BF203E0A6100550DE4 /* DicePoolRollerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD596BE203E0A6100550DE4 /* DicePoolRollerProtocol.swift */; };
+		CCD596C4203E0E9400550DE4 /* DiceRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD596C3203E0E9400550DE4 /* DiceRandomizer.swift */; };
+		CCD8BCA420645CC400DD324D /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD8BCA320645CC400DD324D /* UIImageExtension.swift */; };
+		CCE389C0203330D8003D6D40 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE389BF203330D8003D6D40 /* InfoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		625839C62233FDBB004D5AA6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				625839C52233FDBA004D5AA6 /* DeckTransition.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0ECEED0F48C3D381D70AC7C6 /* Pods-woddr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-woddr.release.xcconfig"; path = "Target Support Files/Pods-woddr/Pods-woddr.release.xcconfig"; sourceTree = "<group>"; };
+		24981D8613A50DF0BBEE40E2 /* Pods-woddr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-woddr.debug.xcconfig"; path = "Target Support Files/Pods-woddr/Pods-woddr.debug.xcconfig"; sourceTree = "<group>"; };
+		623C0E7F220778F40016D475 /* DetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAssembly.swift; sourceTree = "<group>"; };
+		6240BB9E22061F81001EB975 /* CritRuleViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritRuleViewProtocol.swift; sourceTree = "<group>"; };
+		6240BBA022061FB4001EB975 /* CritRulePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritRulePresenterProtocol.swift; sourceTree = "<group>"; };
+		6240BBA222062026001EB975 /* CritRuleInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritRuleInteractorProtocol.swift; sourceTree = "<group>"; };
+		6240BBA4220620B7001EB975 /* CritRuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritRuleInteractor.swift; sourceTree = "<group>"; };
+		6240BBA622062169001EB975 /* CritRulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritRulePresenter.swift; sourceTree = "<group>"; };
+		624A529822C8C773007B605D /* CheckMarkControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkControl.swift; sourceTree = "<group>"; };
+		625279A921F6269800B225D3 /* RoteActionsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoteActionsHandler.swift; sourceTree = "<group>"; };
+		6257C7FD220EEDF200E241DF /* DicePoolAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolAssembly.swift; sourceTree = "<group>"; };
+		6257C7FF220EF25B00E241DF /* InitiativeRollAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeRollAssembly.swift; sourceTree = "<group>"; };
+		6257C801220EF49800E241DF /* ChanceRollAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanceRollAssembly.swift; sourceTree = "<group>"; };
+		6257C803220F071500E241DF /* PickerViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewManager.swift; sourceTree = "<group>"; };
+		625839B72233CB6C004D5AA6 /* Pods_woddr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_woddr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		625839C22233CC18004D5AA6 /* DeckTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DeckTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		625839C722340118004D5AA6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		625839C9223407F7004D5AA6 /* DPMiniSettingsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPMiniSettingsAssembly.swift; sourceTree = "<group>"; };
+		625839CB22341049004D5AA6 /* SimplePickerViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerViewManager.swift; sourceTree = "<group>"; };
+		625839CD2234137D004D5AA6 /* DPSettingsRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSettingsRouterProtocol.swift; sourceTree = "<group>"; };
+		625839CF223413C0004D5AA6 /* DPSettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSettingsRouter.swift; sourceTree = "<group>"; };
+		625839D12234188F004D5AA6 /* DPMiniSettingsRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPMiniSettingsRouterProtocol.swift; sourceTree = "<group>"; };
+		625839D3223418F2004D5AA6 /* DPMiniSettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPMiniSettingsRouter.swift; sourceTree = "<group>"; };
+		625A652C21E7E1D800D34A32 /* DicePoolPresetsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolPresetsAssembly.swift; sourceTree = "<group>"; };
+		625B46B22213566B00D963D8 /* CancelSuccessHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelSuccessHandler.swift; sourceTree = "<group>"; };
+		625C13F121F64AB1005BC4A7 /* RollResultProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollResultProvider.swift; sourceTree = "<group>"; };
+		625CFA832231AEBD00A94280 /* DPMiniSettingsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPMiniSettingsViewProtocol.swift; sourceTree = "<group>"; };
+		625CFA852231B0DE00A94280 /* DPMiniSettingsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPMiniSettingsPresenterProtocol.swift; sourceTree = "<group>"; };
+		625CFA872231B13100A94280 /* DPMiniSettingsInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPMiniSettingsInteractorProtocol.swift; sourceTree = "<group>"; };
+		625CFA892231B53300A94280 /* DPMiniSettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPMiniSettingsPresenter.swift; sourceTree = "<group>"; };
+		625CFA8B2231B57F00A94280 /* DPMiniSettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPMiniSettingsInteractor.swift; sourceTree = "<group>"; };
+		625E6F70220DFA27009CD84A /* CritRuleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritRuleType.swift; sourceTree = "<group>"; };
+		6261D54E22397D0400A3C559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62649D2E21E1507A001F75C6 /* SettingsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAssembly.swift; sourceTree = "<group>"; };
+		6265951F2232B926001A0801 /* DPSettingsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSettingsViewProtocol.swift; sourceTree = "<group>"; };
+		626595212232BA7F001A0801 /* DPSettingsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSettingsPresenterProtocol.swift; sourceTree = "<group>"; };
+		626595232232BB06001A0801 /* DPSettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSettingsPresenter.swift; sourceTree = "<group>"; };
+		626595252232FF87001A0801 /* DPSettingsInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSettingsInteractorProtocol.swift; sourceTree = "<group>"; };
+		62659527223300C6001A0801 /* DPSettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSettingsInteractor.swift; sourceTree = "<group>"; };
+		6265952922330160001A0801 /* DPSettingsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSettingsAssembly.swift; sourceTree = "<group>"; };
+		6265952B22330846001A0801 /* DeckPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckPickerView.swift; sourceTree = "<group>"; };
+		6267E60C223E699000B450E7 /* WillpowerBoostViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerBoostViewProtocol.swift; sourceTree = "<group>"; };
+		6267E60E223E69AB00B450E7 /* WillpowerBoostPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerBoostPresenterProtocol.swift; sourceTree = "<group>"; };
+		6267E610223E6A0500B450E7 /* WillpowerBoostInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerBoostInteractorProtocol.swift; sourceTree = "<group>"; };
+		6267E612223E6A3E00B450E7 /* WillpowerBoostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerBoostViewController.swift; sourceTree = "<group>"; };
+		6267E614223E6BBC00B450E7 /* WillpowerBoostTableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerBoostTableManager.swift; sourceTree = "<group>"; };
+		6267E616223E6E4000B450E7 /* WillpowerBoostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerBoostCell.swift; sourceTree = "<group>"; };
+		627461DA222C439200981312 /* DPMiniSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPMiniSettingsViewController.swift; sourceTree = "<group>"; };
+		627461DC222C480300981312 /* DPSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSettingsViewController.swift; sourceTree = "<group>"; };
+		6276FF9A22149B5F00F71126 /* RollResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollResultType.swift; sourceTree = "<group>"; };
+		627B08F22204C057007B99C3 /* RollHandlersChainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollHandlersChainBuilder.swift; sourceTree = "<group>"; };
+		627B08F42204CC3F007B99C3 /* DoubleSuccessHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleSuccessHandler.swift; sourceTree = "<group>"; };
+		62815BBD223C2BF8007E2BCF /* WillpowerBoostType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerBoostType.swift; sourceTree = "<group>"; };
+		628553642196080A000FB955 /* DicePoolViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolViewProtocol.swift; sourceTree = "<group>"; };
+		62855366219610B7000FB955 /* DicePoolPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolPresenterProtocol.swift; sourceTree = "<group>"; };
+		628553682196118A000FB955 /* DicePoolPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolPresenter.swift; sourceTree = "<group>"; };
+		62862E7D21EBA994003AF70D /* CheckMarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkCell.swift; sourceTree = "<group>"; };
+		6289EBBA220737B0007EB173 /* CritRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritRuleViewController.swift; sourceTree = "<group>"; };
+		6289EBBC22073915007EB173 /* CritRuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritRuleAssembly.swift; sourceTree = "<group>"; };
+		6289EBBE22073C50007EB173 /* RerollHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RerollHandler.swift; sourceTree = "<group>"; };
+		6289EBC022074103007EB173 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		628A998121E9F37600FA782E /* DicePoolPresetsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolPresetsViewProtocol.swift; sourceTree = "<group>"; };
+		628A998321E9F3D900FA782E /* DicePoolPresetsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolPresetsPresenterProtocol.swift; sourceTree = "<group>"; };
+		628A998521E9F42700FA782E /* DicePoolPresetsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolPresetsPresenter.swift; sourceTree = "<group>"; };
+		628A998721E9FB1700FA782E /* DicePoolPresetsInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolPresetsInteractorProtocol.swift; sourceTree = "<group>"; };
+		628A998921E9FB5600FA782E /* DicePoolPresetsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolPresetsInteractor.swift; sourceTree = "<group>"; };
+		628BB58122061A5400D3CDC1 /* CritRuleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritRuleCell.swift; sourceTree = "<group>"; };
+		628CB67D22194F4100C7EE94 /* PickerViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewType.swift; sourceTree = "<group>"; };
+		629096CF21DF716A005C9817 /* SettingsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewProtocol.swift; sourceTree = "<group>"; };
+		629096D121DF71A4005C9817 /* SettingsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterProtocol.swift; sourceTree = "<group>"; };
+		629096D321DF768B005C9817 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		629096D521DF7BC3005C9817 /* MailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailManager.swift; sourceTree = "<group>"; };
+		629096DA21DF8665005C9817 /* DicePoolPresetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolPresetsViewController.swift; sourceTree = "<group>"; };
+		6291840F21DCE7B50059CAE5 /* MailComposeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposeViewControllerDelegate.swift; sourceTree = "<group>"; };
+		6291A95F223EA4C400AC7EEA /* WillpowerBoostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerBoostInteractor.swift; sourceTree = "<group>"; };
+		6291A961223EA60000AC7EEA /* WillpowerBoostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerBoostPresenter.swift; sourceTree = "<group>"; };
+		6291A963223EA89E00AC7EEA /* WillpowerBoostAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerBoostAssembly.swift; sourceTree = "<group>"; };
+		6294A8D7224648AC006DFF7A /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
+		62950486223CD8A3000C666B /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		6298C09122CFCC8400CF052E /* AgainPointSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgainPointSelector.swift; sourceTree = "<group>"; };
+		6298E1EB21A5C97400B960E8 /* DicePoolRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolRouterProtocol.swift; sourceTree = "<group>"; };
+		6298E1ED21A5C9FF00B960E8 /* DicePoolRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolRouter.swift; sourceTree = "<group>"; };
+		629C911921F343DE00282B3C /* DicePoolPresetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolPresetsService.swift; sourceTree = "<group>"; };
+		62A1735721F4988900CCF91B /* RollHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollHandlerProtocol.swift; sourceTree = "<group>"; };
+		62A1735B21F49B9400CCF91B /* SuccessRollHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessRollHandler.swift; sourceTree = "<group>"; };
+		62A1735D21F49D9100CCF91B /* InfiniteRerollHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteRerollHandler.swift; sourceTree = "<group>"; };
+		62AD5DF021AAA0A800274F80 /* InitiativeRollerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeRollerProtocol.swift; sourceTree = "<group>"; };
+		62AD5DF221AAA16000274F80 /* InitiativeRoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeRoller.swift; sourceTree = "<group>"; };
+		62AE35CA219F2E850096F415 /* ChanceRollViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanceRollViewProtocol.swift; sourceTree = "<group>"; };
+		62AE35CC219F304C0096F415 /* ChanceRollPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanceRollPresenterProtocol.swift; sourceTree = "<group>"; };
+		62AE35CE219F31490096F415 /* ChanceRollInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanceRollInteractorProtocol.swift; sourceTree = "<group>"; };
+		62AE35D0219F32160096F415 /* ChanceRollInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanceRollInteractor.swift; sourceTree = "<group>"; };
+		62AE35D2219F35540096F415 /* ChanceRollPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanceRollPresenter.swift; sourceTree = "<group>"; };
+		62B806C321A1BAEA0050DA60 /* InitiativeRollViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeRollViewProtocol.swift; sourceTree = "<group>"; };
+		62B806C521A1BB870050DA60 /* InitiativeRollPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeRollPresenterProtocol.swift; sourceTree = "<group>"; };
+		62B806C721A1BC3D0050DA60 /* InitiativeRollInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeRollInteractorProtocol.swift; sourceTree = "<group>"; };
+		62B806C921A1BD750050DA60 /* InitiativeRollInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeRollInteractor.swift; sourceTree = "<group>"; };
+		62B806CB21A1C1420050DA60 /* InitiativeRollPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeRollPresenter.swift; sourceTree = "<group>"; };
+		62B806CF21A1DA560050DA60 /* DetailsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewProtocol.swift; sourceTree = "<group>"; };
+		62B806D121A1DBB40050DA60 /* DetailsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenterProtocol.swift; sourceTree = "<group>"; };
+		62B806D321A1DC550050DA60 /* DetailsInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractorProtocol.swift; sourceTree = "<group>"; };
+		62B806D521A1EDC90050DA60 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		62BCA20C2199E79C008DE82E /* DicePoolInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolInteractorProtocol.swift; sourceTree = "<group>"; };
+		62BCA20E2199EC02008DE82E /* DicePoolInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolInteractor.swift; sourceTree = "<group>"; };
+		62DC3ADC214C1D0600C88DEF /* StoreReviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreReviewHelper.swift; sourceTree = "<group>"; };
+		62F6293E21B06AA600979279 /* ChanceRollerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanceRollerProtocol.swift; sourceTree = "<group>"; };
+		62F6294021B06BC200979279 /* ChanceRoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanceRoller.swift; sourceTree = "<group>"; };
+		62FA37FC2210663C0014F7F1 /* SetupObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupObject.swift; sourceTree = "<group>"; };
+		97DA3BF24657A495663B2EEA /* Pods_woddr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_woddr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC131F852067977600F7FD2C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CC447B80201F5D93001CA112 /* woddr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = woddr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC447B83201F5D93001CA112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC447B85201F5D93001CA112 /* DicePoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolViewController.swift; sourceTree = "<group>"; };
+		CC447B88201F5D93001CA112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC447B8D201F5D93001CA112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC447B8F201F5D93001CA112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC447B95201F60CF001CA112 /* DiceRandomizerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRandomizerProtocol.swift; sourceTree = "<group>"; };
+		CC8E497F20570120005241A0 /* ChanceRollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanceRollViewController.swift; sourceTree = "<group>"; };
+		CCA14BAA205D531B00A7241A /* InitiativeRollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeRollViewController.swift; sourceTree = "<group>"; };
+		CCB2253B2020A39900041C30 /* DicePoolRoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolRoller.swift; sourceTree = "<group>"; };
+		CCB2253D2020A61D00041C30 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		CCB59FFD203C657900D461A1 /* DiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceProtocol.swift; sourceTree = "<group>"; };
+		CCB59FFF203C664500D461A1 /* RollResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollResult.swift; sourceTree = "<group>"; };
+		CCC419582046D984007F511A /* PickerViewNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewNumber.swift; sourceTree = "<group>"; };
+		CCCC64412021F38100781BBE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		CCD596BE203E0A6100550DE4 /* DicePoolRollerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePoolRollerProtocol.swift; sourceTree = "<group>"; };
+		CCD596C3203E0E9400550DE4 /* DiceRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRandomizer.swift; sourceTree = "<group>"; };
+		CCD8BCA320645CC400DD324D /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		CCE389BF203330D8003D6D40 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC447B7D201F5D93001CA112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625839C32233CC18004D5AA6 /* DeckTransition.framework in Frameworks */,
+				625839B82233CB6C004D5AA6 /* Pods_woddr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		480A62737BF0C5638865626F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24981D8613A50DF0BBEE40E2 /* Pods-woddr.debug.xcconfig */,
+				0ECEED0F48C3D381D70AC7C6 /* Pods-woddr.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6240BB9C22061F44001EB975 /* CritRule */ = {
+			isa = PBXGroup;
+			children = (
+				6240BB9D22061F57001EB975 /* Protocols */,
+				6289EBBA220737B0007EB173 /* CritRuleViewController.swift */,
+				6240BBA622062169001EB975 /* CritRulePresenter.swift */,
+				6240BBA4220620B7001EB975 /* CritRuleInteractor.swift */,
+				6289EBBC22073915007EB173 /* CritRuleAssembly.swift */,
+			);
+			path = CritRule;
+			sourceTree = "<group>";
+		};
+		6240BB9D22061F57001EB975 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6240BB9E22061F81001EB975 /* CritRuleViewProtocol.swift */,
+				6240BBA022061FB4001EB975 /* CritRulePresenterProtocol.swift */,
+				6240BBA222062026001EB975 /* CritRuleInteractorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6248500521B3DFD400979D66 /* Rollers */ = {
+			isa = PBXGroup;
+			children = (
+				6248500621B3DFDD00979D66 /* Protocols */,
+				CCB2253B2020A39900041C30 /* DicePoolRoller.swift */,
+				62AD5DF221AAA16000274F80 /* InitiativeRoller.swift */,
+				62F6294021B06BC200979279 /* ChanceRoller.swift */,
+			);
+			path = Rollers;
+			sourceTree = "<group>";
+		};
+		6248500621B3DFDD00979D66 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CCD596BE203E0A6100550DE4 /* DicePoolRollerProtocol.swift */,
+				62AD5DF021AAA0A800274F80 /* InitiativeRollerProtocol.swift */,
+				62F6293E21B06AA600979279 /* ChanceRollerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6248500721B3E03C00979D66 /* Dice */ = {
+			isa = PBXGroup;
+			children = (
+				6248500921B3E09400979D66 /* Randomizer */,
+				6248500821B3E04C00979D66 /* Protocols */,
+				CCB2253D2020A61D00041C30 /* Dice.swift */,
+			);
+			path = Dice;
+			sourceTree = "<group>";
+		};
+		6248500821B3E04C00979D66 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CCB59FFD203C657900D461A1 /* DiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6248500921B3E09400979D66 /* Randomizer */ = {
+			isa = PBXGroup;
+			children = (
+				CCD596C2203E0E0700550DE4 /* Protocols */,
+				CCD596C3203E0E9400550DE4 /* DiceRandomizer.swift */,
+			);
+			path = Randomizer;
+			sourceTree = "<group>";
+		};
+		6248500A21B3E10800979D66 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				62DC3ADC214C1D0600C88DEF /* StoreReviewHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		62517FA322318A0F0036E9FF /* DicePoolSettings */ = {
+			isa = PBXGroup;
+			children = (
+				6265951E2232B8E6001A0801 /* Protocols */,
+				627461DC222C480300981312 /* DPSettingsViewController.swift */,
+				626595232232BB06001A0801 /* DPSettingsPresenter.swift */,
+				62659527223300C6001A0801 /* DPSettingsInteractor.swift */,
+				625839CF223413C0004D5AA6 /* DPSettingsRouter.swift */,
+				6265952922330160001A0801 /* DPSettingsAssembly.swift */,
+			);
+			path = DicePoolSettings;
+			sourceTree = "<group>";
+		};
+		6257C7FC220EED9C00E241DF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6257C803220F071500E241DF /* PickerViewManager.swift */,
+				629096D521DF7BC3005C9817 /* MailManager.swift */,
+				628CB67D22194F4100C7EE94 /* PickerViewType.swift */,
+				625839CB22341049004D5AA6 /* SimplePickerViewManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		625CFA802231ABEF00A94280 /* DicePoolSettingsPreview */ = {
+			isa = PBXGroup;
+			children = (
+				625CFA822231AD5700A94280 /* Protocols */,
+				627461DA222C439200981312 /* DPMiniSettingsViewController.swift */,
+				625CFA892231B53300A94280 /* DPMiniSettingsPresenter.swift */,
+				625CFA8B2231B57F00A94280 /* DPMiniSettingsInteractor.swift */,
+				625839D3223418F2004D5AA6 /* DPMiniSettingsRouter.swift */,
+				625839C9223407F7004D5AA6 /* DPMiniSettingsAssembly.swift */,
+			);
+			path = DicePoolSettingsPreview;
+			sourceTree = "<group>";
+		};
+		625CFA822231AD5700A94280 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				625CFA832231AEBD00A94280 /* DPMiniSettingsViewProtocol.swift */,
+				625CFA852231B0DE00A94280 /* DPMiniSettingsPresenterProtocol.swift */,
+				625CFA872231B13100A94280 /* DPMiniSettingsInteractorProtocol.swift */,
+				625839D12234188F004D5AA6 /* DPMiniSettingsRouterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6265951E2232B8E6001A0801 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6265951F2232B926001A0801 /* DPSettingsViewProtocol.swift */,
+				626595212232BA7F001A0801 /* DPSettingsPresenterProtocol.swift */,
+				626595252232FF87001A0801 /* DPSettingsInteractorProtocol.swift */,
+				625839CD2234137D004D5AA6 /* DPSettingsRouterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6267E60A223E68ED00B450E7 /* WillpowerBoost */ = {
+			isa = PBXGroup;
+			children = (
+				6267E60B223E693000B450E7 /* Protocols */,
+				6267E612223E6A3E00B450E7 /* WillpowerBoostViewController.swift */,
+				6291A961223EA60000AC7EEA /* WillpowerBoostPresenter.swift */,
+				6291A95F223EA4C400AC7EEA /* WillpowerBoostInteractor.swift */,
+				6291A963223EA89E00AC7EEA /* WillpowerBoostAssembly.swift */,
+				6267E614223E6BBC00B450E7 /* WillpowerBoostTableManager.swift */,
+			);
+			path = WillpowerBoost;
+			sourceTree = "<group>";
+		};
+		6267E60B223E693000B450E7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6267E60C223E699000B450E7 /* WillpowerBoostViewProtocol.swift */,
+				6267E60E223E69AB00B450E7 /* WillpowerBoostPresenterProtocol.swift */,
+				6267E610223E6A0500B450E7 /* WillpowerBoostInteractorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		62815BBC223C29E0007E2BCF /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				6276FF9A22149B5F00F71126 /* RollResultType.swift */,
+				625E6F70220DFA27009CD84A /* CritRuleType.swift */,
+				62815BBD223C2BF8007E2BCF /* WillpowerBoostType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		62862E7A21EBA75B003AF70D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6267E60A223E68ED00B450E7 /* WillpowerBoost */,
+				6240BB9C22061F44001EB975 /* CritRule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		628A998021E9F35400FA782E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				628A998121E9F37600FA782E /* DicePoolPresetsViewProtocol.swift */,
+				628A998321E9F3D900FA782E /* DicePoolPresetsPresenterProtocol.swift */,
+				628A998721E9FB1700FA782E /* DicePoolPresetsInteractorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		628BB57D2205FFC300D3CDC1 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				627B08F22204C057007B99C3 /* RollHandlersChainBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		628BB57E2205FFDA00D3CDC1 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				625C13F121F64AB1005BC4A7 /* RollResultProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		629096CE21DF7136005C9817 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				629096CF21DF716A005C9817 /* SettingsViewProtocol.swift */,
+				629096D121DF71A4005C9817 /* SettingsPresenterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		629096D721DF85AF005C9817 /* DicePoolPresets */ = {
+			isa = PBXGroup;
+			children = (
+				62862E7A21EBA75B003AF70D /* Modules */,
+				628A998021E9F35400FA782E /* Protocols */,
+				629096DA21DF8665005C9817 /* DicePoolPresetsViewController.swift */,
+				628A998521E9F42700FA782E /* DicePoolPresetsPresenter.swift */,
+				628A998921E9FB5600FA782E /* DicePoolPresetsInteractor.swift */,
+				625A652C21E7E1D800D34A32 /* DicePoolPresetsAssembly.swift */,
+			);
+			path = DicePoolPresets;
+			sourceTree = "<group>";
+		};
+		629096D821DF85DF005C9817 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				629096D721DF85AF005C9817 /* DicePoolPresets */,
+				62AD5DED21AA9E1300274F80 /* Info */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		629096D921DF8600005C9817 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				625CFA802231ABEF00A94280 /* DicePoolSettingsPreview */,
+				62517FA322318A0F0036E9FF /* DicePoolSettings */,
+				62B806CD21A1D9FC0050DA60 /* Details */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		62A1735921F49A7B00CCF91B /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				62A1735A21F49A8D00CCF91B /* Protocols */,
+				628BB57E2205FFDA00D3CDC1 /* Providers */,
+				628BB57D2205FFC300D3CDC1 /* Builders */,
+				62A1735B21F49B9400CCF91B /* SuccessRollHandler.swift */,
+				62A1735D21F49D9100CCF91B /* InfiniteRerollHandler.swift */,
+				625279A921F6269800B225D3 /* RoteActionsHandler.swift */,
+				627B08F42204CC3F007B99C3 /* DoubleSuccessHandler.swift */,
+				6289EBBE22073C50007EB173 /* RerollHandler.swift */,
+				625B46B22213566B00D963D8 /* CancelSuccessHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		62A1735A21F49A8D00CCF91B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				62A1735721F4988900CCF91B /* RollHandlerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		62AD5DEB21AA9DE600274F80 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				62BCA2102199FB32008DE82E /* DicePool */,
+				62AE35C8219F2DED0096F415 /* ChanceRoll */,
+				62B806C121A1BAB40050DA60 /* InitiativeRoll */,
+				62AD5DEC21AA9E0900274F80 /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		62AD5DEC21AA9E0900274F80 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				629096D821DF85DF005C9817 /* Modules */,
+				629096CE21DF7136005C9817 /* Protocols */,
+				CC131F852067977600F7FD2C /* SettingsViewController.swift */,
+				6291840F21DCE7B50059CAE5 /* MailComposeViewControllerDelegate.swift */,
+				629096D321DF768B005C9817 /* SettingsPresenter.swift */,
+				62649D2E21E1507A001F75C6 /* SettingsAssembly.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		62AD5DED21AA9E1300274F80 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				CCE389BF203330D8003D6D40 /* InfoViewController.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		62AD5DEE21AA9E7B00274F80 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				62A1735921F49A7B00CCF91B /* Handlers */,
+				6248500721B3E03C00979D66 /* Dice */,
+				6248500521B3DFD400979D66 /* Rollers */,
+				6248500A21B3E10800979D66 /* Helpers */,
+				629C911921F343DE00282B3C /* DicePoolPresetsService.swift */,
+				62950486223CD8A3000C666B /* UserDefaultsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		62AE35C8219F2DED0096F415 /* ChanceRoll */ = {
+			isa = PBXGroup;
+			children = (
+				62AE35C9219F2E0D0096F415 /* Protocols */,
+				CC8E497F20570120005241A0 /* ChanceRollViewController.swift */,
+				62AE35D2219F35540096F415 /* ChanceRollPresenter.swift */,
+				62AE35D0219F32160096F415 /* ChanceRollInteractor.swift */,
+				6257C801220EF49800E241DF /* ChanceRollAssembly.swift */,
+			);
+			path = ChanceRoll;
+			sourceTree = "<group>";
+		};
+		62AE35C9219F2E0D0096F415 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				62AE35CA219F2E850096F415 /* ChanceRollViewProtocol.swift */,
+				62AE35CC219F304C0096F415 /* ChanceRollPresenterProtocol.swift */,
+				62AE35CE219F31490096F415 /* ChanceRollInteractorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		62B806C121A1BAB40050DA60 /* InitiativeRoll */ = {
+			isa = PBXGroup;
+			children = (
+				62B806C221A1BAC80050DA60 /* Protocols */,
+				CCA14BAA205D531B00A7241A /* InitiativeRollViewController.swift */,
+				62B806CB21A1C1420050DA60 /* InitiativeRollPresenter.swift */,
+				62B806C921A1BD750050DA60 /* InitiativeRollInteractor.swift */,
+				6257C7FF220EF25B00E241DF /* InitiativeRollAssembly.swift */,
+			);
+			path = InitiativeRoll;
+			sourceTree = "<group>";
+		};
+		62B806C221A1BAC80050DA60 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				62B806C321A1BAEA0050DA60 /* InitiativeRollViewProtocol.swift */,
+				62B806C521A1BB870050DA60 /* InitiativeRollPresenterProtocol.swift */,
+				62B806C721A1BC3D0050DA60 /* InitiativeRollInteractorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		62B806CD21A1D9FC0050DA60 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				62B806CE21A1DA280050DA60 /* Protocols */,
+				CCCC64412021F38100781BBE /* DetailsViewController.swift */,
+				62B806D521A1EDC90050DA60 /* DetailsPresenter.swift */,
+				6289EBC022074103007EB173 /* DetailsInteractor.swift */,
+				623C0E7F220778F40016D475 /* DetailsAssembly.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		62B806CE21A1DA280050DA60 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				62B806CF21A1DA560050DA60 /* DetailsViewProtocol.swift */,
+				62B806D121A1DBB40050DA60 /* DetailsPresenterProtocol.swift */,
+				62B806D321A1DC550050DA60 /* DetailsInteractorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		62BCA2102199FB32008DE82E /* DicePool */ = {
+			isa = PBXGroup;
+			children = (
+				629096D921DF8600005C9817 /* Modules */,
+				62BCA2112199FB9C008DE82E /* Protocols */,
+				CC447B85201F5D93001CA112 /* DicePoolViewController.swift */,
+				628553682196118A000FB955 /* DicePoolPresenter.swift */,
+				62BCA20E2199EC02008DE82E /* DicePoolInteractor.swift */,
+				6298E1ED21A5C9FF00B960E8 /* DicePoolRouter.swift */,
+				6257C7FD220EEDF200E241DF /* DicePoolAssembly.swift */,
+			);
+			path = DicePool;
+			sourceTree = "<group>";
+		};
+		62BCA2112199FB9C008DE82E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				628553642196080A000FB955 /* DicePoolViewProtocol.swift */,
+				62855366219610B7000FB955 /* DicePoolPresenterProtocol.swift */,
+				62BCA20C2199E79C008DE82E /* DicePoolInteractorProtocol.swift */,
+				6298E1EB21A5C97400B960E8 /* DicePoolRouterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CC447B77201F5D93001CA112 = {
+			isa = PBXGroup;
+			children = (
+				CC447B82201F5D93001CA112 /* woddr */,
+				CC447B81201F5D93001CA112 /* Products */,
+				480A62737BF0C5638865626F /* Pods */,
+				D00EC06EC49667017EDE1BF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC447B81201F5D93001CA112 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC447B80201F5D93001CA112 /* woddr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC447B82201F5D93001CA112 /* woddr */ = {
+			isa = PBXGroup;
+			children = (
+				62AD5DEB21AA9DE600274F80 /* Modules */,
+				62815BBC223C29E0007E2BCF /* Enums */,
+				CCD596C5203E10E400550DE4 /* Entities */,
+				6257C7FC220EED9C00E241DF /* Managers */,
+				62AD5DEE21AA9E7B00274F80 /* Services */,
+				CCC4195D2046DF86007F511A /* Views */,
+				62FA37FC2210663C0014F7F1 /* SetupObject.swift */,
+				CC447B83201F5D93001CA112 /* AppDelegate.swift */,
+				6261D54E22397D0400A3C559 /* Assets.xcassets */,
+				CC447B87201F5D93001CA112 /* Main.storyboard */,
+				CC447B8C201F5D93001CA112 /* LaunchScreen.storyboard */,
+				CC447B8F201F5D93001CA112 /* Info.plist */,
+			);
+			path = woddr;
+			sourceTree = "<group>";
+		};
+		CCC4195D2046DF86007F511A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCD8BCA220645CA800DD324D /* Extensions */,
+				62862E7D21EBA994003AF70D /* CheckMarkCell.swift */,
+				628BB58122061A5400D3CDC1 /* CritRuleCell.swift */,
+				6265952B22330846001A0801 /* DeckPickerView.swift */,
+				6267E616223E6E4000B450E7 /* WillpowerBoostCell.swift */,
+				6294A8D7224648AC006DFF7A /* StepperView.swift */,
+				624A529822C8C773007B605D /* CheckMarkControl.swift */,
+				6298C09122CFCC8400CF052E /* AgainPointSelector.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CCD596C2203E0E0700550DE4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CC447B95201F60CF001CA112 /* DiceRandomizerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CCD596C5203E10E400550DE4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CCC419582046D984007F511A /* PickerViewNumber.swift */,
+				CCB59FFF203C664500D461A1 /* RollResult.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CCD8BCA220645CA800DD324D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CCD8BCA320645CC400DD324D /* UIImageExtension.swift */,
+				625839C722340118004D5AA6 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D00EC06EC49667017EDE1BF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				625839C22233CC18004D5AA6 /* DeckTransition.framework */,
+				625839B72233CB6C004D5AA6 /* Pods_woddr.framework */,
+				97DA3BF24657A495663B2EEA /* Pods_woddr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC447B7F201F5D93001CA112 /* woddr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC447B92201F5D93001CA112 /* Build configuration list for PBXNativeTarget "woddr" */;
+			buildPhases = (
+				3D7D8502530C803517804216 /* [CP] Check Pods Manifest.lock */,
+				CC447B7C201F5D93001CA112 /* Sources */,
+				CC447B7D201F5D93001CA112 /* Frameworks */,
+				CC447B7E201F5D93001CA112 /* Resources */,
+				620582722208A3DF00C15714 /* ShellScript */,
+				625839C62233FDBB004D5AA6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = woddr;
+			productName = woddr;
+			productReference = CC447B80201F5D93001CA112 /* woddr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC447B78201F5D93001CA112 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tofik Mamishov";
+				TargetAttributes = {
+					CC447B7F201F5D93001CA112 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CC447B7B201F5D93001CA112 /* Build configuration list for PBXProject "woddr" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC447B77201F5D93001CA112;
+			productRefGroup = CC447B81201F5D93001CA112 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC447B7F201F5D93001CA112 /* woddr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC447B7E201F5D93001CA112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC447B8E201F5D93001CA112 /* LaunchScreen.storyboard in Resources */,
+				6261D54F22397D0400A3C559 /* Assets.xcassets in Resources */,
+				CC447B89201F5D93001CA112 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D7D8502530C803517804216 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-woddr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		620582722208A3DF00C15714 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\nexit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC447B7C201F5D93001CA112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				628A998421E9F3D900FA782E /* DicePoolPresetsPresenterProtocol.swift in Sources */,
+				CCD596C4203E0E9400550DE4 /* DiceRandomizer.swift in Sources */,
+				625E6F71220DFA27009CD84A /* CritRuleType.swift in Sources */,
+				62A1735C21F49B9400CCF91B /* SuccessRollHandler.swift in Sources */,
+				62F6294121B06BC200979279 /* ChanceRoller.swift in Sources */,
+				628553692196118A000FB955 /* DicePoolPresenter.swift in Sources */,
+				629096D221DF71A4005C9817 /* SettingsPresenterProtocol.swift in Sources */,
+				627B08F52204CC3F007B99C3 /* DoubleSuccessHandler.swift in Sources */,
+				62B806C421A1BAEA0050DA60 /* InitiativeRollViewProtocol.swift in Sources */,
+				CCA14BAB205D531B00A7241A /* InitiativeRollViewController.swift in Sources */,
+				626595242232BB06001A0801 /* DPSettingsPresenter.swift in Sources */,
+				62AE35CD219F304C0096F415 /* ChanceRollPresenterProtocol.swift in Sources */,
+				62F6293F21B06AA600979279 /* ChanceRollerProtocol.swift in Sources */,
+				629096DB21DF8665005C9817 /* DicePoolPresetsViewController.swift in Sources */,
+				6289EBBD22073915007EB173 /* CritRuleAssembly.swift in Sources */,
+				CCC419592046D984007F511A /* PickerViewNumber.swift in Sources */,
+				62B806D621A1EDC90050DA60 /* DetailsPresenter.swift in Sources */,
+				625A652D21E7E1D800D34A32 /* DicePoolPresetsAssembly.swift in Sources */,
+				62862E7E21EBA994003AF70D /* CheckMarkCell.swift in Sources */,
+				CC447B86201F5D93001CA112 /* DicePoolViewController.swift in Sources */,
+				6291A962223EA60000AC7EEA /* WillpowerBoostPresenter.swift in Sources */,
+				6240BB9F22061F81001EB975 /* CritRuleViewProtocol.swift in Sources */,
+				62AE35CF219F31490096F415 /* ChanceRollInteractorProtocol.swift in Sources */,
+				6267E611223E6A0500B450E7 /* WillpowerBoostInteractorProtocol.swift in Sources */,
+				627461DD222C480300981312 /* DPSettingsViewController.swift in Sources */,
+				62BCA20F2199EC02008DE82E /* DicePoolInteractor.swift in Sources */,
+				6265952C22330846001A0801 /* DeckPickerView.swift in Sources */,
+				CCD596BF203E0A6100550DE4 /* DicePoolRollerProtocol.swift in Sources */,
+				62B806C821A1BC3D0050DA60 /* InitiativeRollInteractorProtocol.swift in Sources */,
+				62B806D421A1DC550050DA60 /* DetailsInteractorProtocol.swift in Sources */,
+				6257C802220EF49800E241DF /* ChanceRollAssembly.swift in Sources */,
+				6291A960223EA4C400AC7EEA /* WillpowerBoostInteractor.swift in Sources */,
+				CC447B96201F60CF001CA112 /* DiceRandomizerProtocol.swift in Sources */,
+				CCD8BCA420645CC400DD324D /* UIImageExtension.swift in Sources */,
+				6267E60F223E69AB00B450E7 /* WillpowerBoostPresenterProtocol.swift in Sources */,
+				625CFA8A2231B53300A94280 /* DPMiniSettingsPresenter.swift in Sources */,
+				629096D421DF768B005C9817 /* SettingsPresenter.swift in Sources */,
+				628A998621E9F42700FA782E /* DicePoolPresetsPresenter.swift in Sources */,
+				6298E1EE21A5C9FF00B960E8 /* DicePoolRouter.swift in Sources */,
+				CCB2253E2020A61D00041C30 /* Dice.swift in Sources */,
+				6265952A22330160001A0801 /* DPSettingsAssembly.swift in Sources */,
+				6240BBA5220620B7001EB975 /* CritRuleInteractor.swift in Sources */,
+				628A998221E9F37600FA782E /* DicePoolPresetsViewProtocol.swift in Sources */,
+				626595222232BA7F001A0801 /* DPSettingsPresenterProtocol.swift in Sources */,
+				62FA37FD2210663C0014F7F1 /* SetupObject.swift in Sources */,
+				6267E617223E6E4000B450E7 /* WillpowerBoostCell.swift in Sources */,
+				6257C7FE220EEDF200E241DF /* DicePoolAssembly.swift in Sources */,
+				62AE35D3219F35540096F415 /* ChanceRollPresenter.swift in Sources */,
+				6267E615223E6BBC00B450E7 /* WillpowerBoostTableManager.swift in Sources */,
+				62DC3ADD214C1D0600C88DEF /* StoreReviewHelper.swift in Sources */,
+				62AD5DF321AAA16000274F80 /* InitiativeRoller.swift in Sources */,
+				62B806D021A1DA560050DA60 /* DetailsViewProtocol.swift in Sources */,
+				625CFA862231B0DE00A94280 /* DPMiniSettingsPresenterProtocol.swift in Sources */,
+				6267E60D223E699000B450E7 /* WillpowerBoostViewProtocol.swift in Sources */,
+				62855367219610B7000FB955 /* DicePoolPresenterProtocol.swift in Sources */,
+				62B806CA21A1BD750050DA60 /* InitiativeRollInteractor.swift in Sources */,
+				62950487223CD8A3000C666B /* UserDefaultsService.swift in Sources */,
+				6294A8D8224648AC006DFF7A /* StepperView.swift in Sources */,
+				625CFA8C2231B57F00A94280 /* DPMiniSettingsInteractor.swift in Sources */,
+				625C13F221F64AB1005BC4A7 /* RollResultProvider.swift in Sources */,
+				6298E1EC21A5C97400B960E8 /* DicePoolRouterProtocol.swift in Sources */,
+				6291841021DCE7B50059CAE5 /* MailComposeViewControllerDelegate.swift in Sources */,
+				625279AA21F6269800B225D3 /* RoteActionsHandler.swift in Sources */,
+				626595262232FF87001A0801 /* DPSettingsInteractorProtocol.swift in Sources */,
+				CCE389C0203330D8003D6D40 /* InfoViewController.swift in Sources */,
+				62A1735E21F49D9100CCF91B /* InfiniteRerollHandler.swift in Sources */,
+				6289EBBB220737B0007EB173 /* CritRuleViewController.swift in Sources */,
+				6240BBA322062026001EB975 /* CritRuleInteractorProtocol.swift in Sources */,
+				627B08F32204C057007B99C3 /* RollHandlersChainBuilder.swift in Sources */,
+				624A529922C8C773007B605D /* CheckMarkControl.swift in Sources */,
+				CC447B84201F5D93001CA112 /* AppDelegate.swift in Sources */,
+				62A1735821F4988900CCF91B /* RollHandlerProtocol.swift in Sources */,
+				625839C822340118004D5AA6 /* UIView.swift in Sources */,
+				6298C09222CFCC8400CF052E /* AgainPointSelector.swift in Sources */,
+				629096D621DF7BC3005C9817 /* MailManager.swift in Sources */,
+				6267E613223E6A3E00B450E7 /* WillpowerBoostViewController.swift in Sources */,
+				62B806D221A1DBB40050DA60 /* DetailsPresenterProtocol.swift in Sources */,
+				629C911A21F343DE00282B3C /* DicePoolPresetsService.swift in Sources */,
+				628BB58222061A5400D3CDC1 /* CritRuleCell.swift in Sources */,
+				6291A964223EA89E00AC7EEA /* WillpowerBoostAssembly.swift in Sources */,
+				625839D0223413C0004D5AA6 /* DPSettingsRouter.swift in Sources */,
+				62659528223300C6001A0801 /* DPSettingsInteractor.swift in Sources */,
+				CCB2253C2020A39900041C30 /* DicePoolRoller.swift in Sources */,
+				CC8E498020570120005241A0 /* ChanceRollViewController.swift in Sources */,
+				625839CA223407F7004D5AA6 /* DPMiniSettingsAssembly.swift in Sources */,
+				CCB59FFE203C657900D461A1 /* DiceProtocol.swift in Sources */,
+				626595202232B926001A0801 /* DPSettingsViewProtocol.swift in Sources */,
+				625B46B32213566B00D963D8 /* CancelSuccessHandler.swift in Sources */,
+				625839CE2234137D004D5AA6 /* DPSettingsRouterProtocol.swift in Sources */,
+				6289EBC122074103007EB173 /* DetailsInteractor.swift in Sources */,
+				CCB5A000203C664500D461A1 /* RollResult.swift in Sources */,
+				6276FF9B22149B5F00F71126 /* RollResultType.swift in Sources */,
+				628553652196080A000FB955 /* DicePoolViewProtocol.swift in Sources */,
+				627461DB222C439200981312 /* DPMiniSettingsViewController.swift in Sources */,
+				CCCC64422021F38100781BBE /* DetailsViewController.swift in Sources */,
+				625839D4223418F2004D5AA6 /* DPMiniSettingsRouter.swift in Sources */,
+				628A998A21E9FB5600FA782E /* DicePoolPresetsInteractor.swift in Sources */,
+				62AE35CB219F2E850096F415 /* ChanceRollViewProtocol.swift in Sources */,
+				62AD5DF121AAA0A800274F80 /* InitiativeRollerProtocol.swift in Sources */,
+				62AE35D1219F32160096F415 /* ChanceRollInteractor.swift in Sources */,
+				625CFA842231AEBD00A94280 /* DPMiniSettingsViewProtocol.swift in Sources */,
+				6257C804220F071500E241DF /* PickerViewManager.swift in Sources */,
+				62815BBE223C2BF8007E2BCF /* WillpowerBoostType.swift in Sources */,
+				6257C800220EF25B00E241DF /* InitiativeRollAssembly.swift in Sources */,
+				625839CC22341049004D5AA6 /* SimplePickerViewManager.swift in Sources */,
+				CC131F862067977600F7FD2C /* SettingsViewController.swift in Sources */,
+				623C0E80220778F40016D475 /* DetailsAssembly.swift in Sources */,
+				6289EBBF22073C50007EB173 /* RerollHandler.swift in Sources */,
+				625CFA882231B13100A94280 /* DPMiniSettingsInteractorProtocol.swift in Sources */,
+				62BCA20D2199E79C008DE82E /* DicePoolInteractorProtocol.swift in Sources */,
+				62B806C621A1BB870050DA60 /* InitiativeRollPresenterProtocol.swift in Sources */,
+				6240BBA722062169001EB975 /* CritRulePresenter.swift in Sources */,
+				625839D22234188F004D5AA6 /* DPMiniSettingsRouterProtocol.swift in Sources */,
+				628A998821E9FB1700FA782E /* DicePoolPresetsInteractorProtocol.swift in Sources */,
+				628CB67E22194F4100C7EE94 /* PickerViewType.swift in Sources */,
+				62B806CC21A1C1420050DA60 /* InitiativeRollPresenter.swift in Sources */,
+				62649D2F21E1507A001F75C6 /* SettingsAssembly.swift in Sources */,
+				6240BBA122061FB4001EB975 /* CritRulePresenterProtocol.swift in Sources */,
+				629096D021DF716A005C9817 /* SettingsViewProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC447B87201F5D93001CA112 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC447B88201F5D93001CA112 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC447B8C201F5D93001CA112 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC447B8D201F5D93001CA112 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC447B90201F5D93001CA112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC447B91201F5D93001CA112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC447B93201F5D93001CA112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24981D8613A50DF0BBEE40E2 /* Pods-woddr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0;
+				DEVELOPMENT_TEAM = 6X7Q8FWMFD;
+				INFOPLIST_FILE = woddr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tofik.mamishov.woddr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		CC447B94201F5D93001CA112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ECEED0F48C3D381D70AC7C6 /* Pods-woddr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0;
+				DEVELOPMENT_TEAM = 6X7Q8FWMFD;
+				INFOPLIST_FILE = woddr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tofik.mamishov.woddr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC447B7B201F5D93001CA112 /* Build configuration list for PBXProject "woddr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC447B90201F5D93001CA112 /* Debug */,
+				CC447B91201F5D93001CA112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC447B92201F5D93001CA112 /* Build configuration list for PBXNativeTarget "woddr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC447B93201F5D93001CA112 /* Debug */,
+				CC447B94201F5D93001CA112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC447B78201F5D93001CA112 /* Project object */;
+}
